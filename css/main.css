@@ -284,6 +284,14 @@ Navbar
   margin-top: 30px;
 }
 
+/* Moves logo in nav bar upwards by 40px
+*/
+
+.nav-logo {
+  position: relative;
+  bottom: 40px
+}
+
 .nav-btn {
   padding: 0.15 rem 0.75 rem;
 }
@@ -448,3 +456,35 @@ Footer
 Navbar
 ===============
 */
+
+/*
+3 columns on About page
+*/
+
+.slogan{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 6%;
+    display:block;
+    margin: 2% 2% 2% 2%;
+    color:#A5331D;
+
+}
+
+.column {
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 3%;
+    
+}
+
+.col1image, .col2image, .col3image
+{
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
