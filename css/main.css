@@ -289,7 +289,9 @@ Navbar
 
 .nav-logo {
   position: relative;
-  bottom: 40px
+  bottom: 40px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .nav-btn {
@@ -369,6 +371,10 @@ Navbar
     margin-left: auto;
     margin-right: 0;
   }
+
+  .nav-logo {
+    margin-top: 50px;
+  }
 }
 
 /*
@@ -417,6 +423,12 @@ Footer
   /* background-color: var(--black); */
 }
 
+/*
+=============== 
+Hero
+===============
+*/
+
 .hero {
   height: 40vh;
   background: url(../assets/header.png) center/cover no-repeat;
@@ -453,41 +465,144 @@ Footer
 
 /*
 =============== 
-Navbar
+Stitches
 ===============
 */
+
+.stitches-container {
+  display: grid;
+  gap: 2rem 1rem;
+}
+
+.stitches-list {
+  display: grid;
+  gap: 2rem 1rem;
+  padding-bottom: 3rem;
+}
+.tags-container {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  /* background: blue; */
+}
+.tags-container h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: black;
+}
+.tags-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: black;
+}
+.tags-list a {
+  text-transform: capitalize;
+  display: block;
+  color: var(--grey-500);
+  transition: var(--transition);
+}
+.tags-list a:hover {
+  color: var(--primary-500);
+}
+.item {
+  display: block;
+}
+.item-img {
+  height: 15rem;
+  border-radius: var(--borderRadius);
+  margin-bottom: 1rem;
+}
+.item h5 {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+  line-height: 1;
+  color: var(--grey-700);
+  color: black;
+}
+.item p {
+  margin-bottom: 0;
+  line-height: 1;
+  color: var(--grey-500);
+  margin-top: 0.5rem;
+  letter-spacing: var(--letterSpacing);
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 576px) {
+  .stitches-list {
+    grid-template-columns: 1fr 1fr;
+    color: black;
+  }
+  .item-img {
+    height: 10rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .stitches-container {
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+    color: black;
+  }
+  .stitches-list {
+    grid-template-columns: 1fr 1fr;
+    color: black;
+  }
+
+  .item p {
+    font-size: 0.85rem;
+    color: black;
+  }
+  .tags-container {
+    order: 0;
+    /* background: blue; */
+  }
+  .tags-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item h5 {
+    font-size: 1.15rem;
+  }
+  .stitches-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 /*
 3 columns on About page
 */
 
-.slogan{
-    font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    padding-top: 6%;
-    display:block;
-    margin: 2% 2% 2% 2%;
-    color:#A5331D;
-
+.slogan {
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  padding-top: 6%;
+  display: block;
+  margin: 2% 2% 2% 2%;
+  color: #a5331d;
 }
 
 .column {
-    width: 33%;
-    float: left;
-    text-align: center;
-    padding: 3%;
-    
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding: 3%;
 }
 
-.col1image, .col2image, .col3image
-{
-    display: block;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 150px;
-    
+.col1image,
+.col2image,
+.col3image {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
 }
 
 /* body {
