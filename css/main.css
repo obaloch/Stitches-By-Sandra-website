@@ -593,11 +593,17 @@ Stitches
   align-self: center;
   align-items: center;
   width: 100%;
+  font-size: 1.25vh;
 }
 
 @media (min-width: 768px) {
   .slogan {
     font-size: 50px;
 }
-
+  .card-img-top {
+    max-width: 50%;
+    height: auto;
+    align-self: center;
+  }
 }
+
