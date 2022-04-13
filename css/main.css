@@ -46,7 +46,7 @@ html {
   --bodyFont: "Nunito", sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
-  --backgroundColor: var(--grey-50);
+  --backgroundColor: var(--primary-100);
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
@@ -273,7 +273,7 @@ Navbar
 }
 
 .nav-header {
-  height: 12rem;
+  /* height: 12rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -281,7 +281,7 @@ Navbar
 
 .nav-header img {
   width: 200px;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 /* Moves logo in nav bar upwards by 40px
@@ -582,7 +582,7 @@ Stitches
   font-size: 28px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
-  padding-top: 6%;
+  padding-top: 0;
   display: block;
   margin: 2% 2% 2% 2%;
   color: #645cff;
@@ -596,14 +596,23 @@ Stitches
   font-size: 1.25vh;
 }
 
+.card-img-top{
+  border-radius: 20px;
+  padding: 2%;
+}
 @media (min-width: 768px) {
   .slogan {
     font-size: 50px;
 }
   .card-img-top {
-    max-width: 50%;
+    max-width: 75%;
     height: auto;
     align-self: center;
+    
   }
+}
+
+.card {
+  border-radius: 20px;
 }
 
