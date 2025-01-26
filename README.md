@@ -1,4 +1,4 @@
-# Stitches By Sandra Website (http://stitchesbysandra.lovestoblog.com)
+# Stitches By Sandra Website 
 
 ## Creators
 - Danielle Abranms (dnabrams@ilstu.edu)
